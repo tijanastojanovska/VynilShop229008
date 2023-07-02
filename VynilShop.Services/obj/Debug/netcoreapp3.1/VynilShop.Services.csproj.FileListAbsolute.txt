@@ -1,0 +1,17 @@
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\bin\Debug\netcoreapp3.1\VynilShop.Services.deps.json
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\bin\Debug\netcoreapp3.1\VynilShop.Services.dll
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\bin\Debug\netcoreapp3.1\VynilShop.Services.pdb
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\obj\Debug\netcoreapp3.1\VynilShop.Services.csprojAssemblyReference.cache
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\obj\Debug\netcoreapp3.1\VynilShop.Services.AssemblyInfoInputs.cache
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\obj\Debug\netcoreapp3.1\VynilShop.Services.AssemblyInfo.cs
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\obj\Debug\netcoreapp3.1\VynilShop.Services.csproj.CoreCompileInputs.cache
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\obj\Debug\netcoreapp3.1\VynilShop.Services.dll
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\obj\Debug\netcoreapp3.1\VynilShop.Services.pdb
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\bin\Debug\netcoreapp3.1\VynilShop.Services.runtimeconfig.json
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\bin\Debug\netcoreapp3.1\VynilShop.Services.runtimeconfig.dev.json
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\bin\Debug\netcoreapp3.1\VynilShop.Domain.dll
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\bin\Debug\netcoreapp3.1\VynilShop.Repository.dll
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\bin\Debug\netcoreapp3.1\VynilShop.Domain.pdb
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\bin\Debug\netcoreapp3.1\VynilShop.Repository.pdb
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\obj\Debug\netcoreapp3.1\VynilShop.Services.csproj.CopyComplete
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Services\obj\Debug\netcoreapp3.1\VynilShop.Services.genruntimeconfig.cache

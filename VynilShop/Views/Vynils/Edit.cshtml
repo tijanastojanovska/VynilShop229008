@@ -1,0 +1,66 @@
+﻿@model VynilShop.Domain.DomainModels.Vynil
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Vynil</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="VynilName" class="control-label"></label>
+                <input asp-for="VynilName" class="form-control" />
+                <span asp-validation-for="VynilName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VynilImage" class="control-label"></label>
+                <input asp-for="VynilImage" class="form-control" />
+                <span asp-validation-for="VynilImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VynilDescription" class="control-label"></label>
+                <input asp-for="VynilDescription" class="form-control" />
+                <span asp-validation-for="VynilDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VynilDate" class="control-label"></label>
+                <input asp-for="VynilDate" class="form-control" />
+                <span asp-validation-for="VynilDate" class="text-danger"></span>
+            </div>
+         
+            <div class="form-group">
+                <label asp-for="VynilPrice" class="control-label"></label>
+                <input asp-for="VynilPrice" class="form-control" />
+                <span asp-validation-for="VynilPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VynilRating" class="control-label"></label>
+                <input asp-for="VynilRating" class="form-control" />
+                <span asp-validation-for="VynilRating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model VynilShop.Domain.DTO.ChangeUserRoleDto
+
+@if (Model.CurrentUserRole == EnumRoles.Administrator)
+{
+    <h1>Change User Role</h1>
+
+    <form asp-action="ChangeRoleOfUser" asp-controller="Account" method="post">
+        <div class="form-group">
+            <label asp-for="Id" class="control-label"></label>
+            <select asp-for="Id" class="form-control" asp-items="@(new SelectList(ViewBag.Users, "Id", "FullName"))"></select>
+        </div>
+        <select asp-for="Role" asp-items="Html.GetEnumSelectList<VynilShop.Domain.DomainModels.EnumRoles>()">
+            <option value="">Choose a role</option>
+        </select>
+        <button type="submit" class="btn btn-success">Save Role</button>
+    </form>
+}
+else
+{
+    <h2>Only administrators can change the role of an user!</h2>
+}

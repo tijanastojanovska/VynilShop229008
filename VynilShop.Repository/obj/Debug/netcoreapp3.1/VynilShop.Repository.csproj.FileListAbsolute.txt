@@ -1,0 +1,15 @@
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\bin\Debug\netcoreapp3.1\VynilShop.Repository.deps.json
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\bin\Debug\netcoreapp3.1\VynilShop.Repository.dll
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\bin\Debug\netcoreapp3.1\VynilShop.Repository.pdb
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\obj\Debug\netcoreapp3.1\VynilShop.Repository.AssemblyInfoInputs.cache
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\obj\Debug\netcoreapp3.1\VynilShop.Repository.AssemblyInfo.cs
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\obj\Debug\netcoreapp3.1\VynilShop.Repository.csproj.CoreCompileInputs.cache
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\obj\Debug\netcoreapp3.1\VynilShop.Repository.dll
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\obj\Debug\netcoreapp3.1\VynilShop.Repository.pdb
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\bin\Debug\netcoreapp3.1\VynilShop.Domain.dll
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\obj\Debug\netcoreapp3.1\VynilShop.Repository.csprojAssemblyReference.cache
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\bin\Debug\netcoreapp3.1\VynilShop.Repository.runtimeconfig.json
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\bin\Debug\netcoreapp3.1\VynilShop.Repository.runtimeconfig.dev.json
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\bin\Debug\netcoreapp3.1\VynilShop.Domain.pdb
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\obj\Debug\netcoreapp3.1\VynilShop.Repository.csproj.CopyComplete
+C:\Users\stoja\OneDrive\Desktop\magisterski\upravuvanje\VynilShop\VynilShop\VynilShop.Repository\obj\Debug\netcoreapp3.1\VynilShop.Repository.genruntimeconfig.cache

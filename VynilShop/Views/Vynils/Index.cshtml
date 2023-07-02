@@ -1,0 +1,111 @@
+﻿@model VynilShop.Domain.DTO.VynilDto
+@using VynilShop.Domain.DomainModels;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <div class="row border border-primary">
+        <div class="col-md-6">
+            <label style="font:bold">Filter</label>
+            <form asp-action="Index" asp-controller="Vynils" method="post">
+                @Html.HiddenFor(m => m.Vynils)
+                <div class="form-group">
+                    <label asp-for="Genre" class="control-label" style="width: 30%; height:30%"></label>
+                    <select class="form-control" asp-for="Genre" asp-items="Html.GetEnumSelectList<EnumGenre>()" style="width: 30%; height:30%"></select>
+                    <span asp-validation-for="Genre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ArtistId" class="control-label" style="width: 30%; height:30%"></label>
+                    <select asp-for="ArtistId" class="form-control" asp-items="@(new SelectList(ViewBag.Artists, "Id", "FullName"))" style="width: 30%; height:30%"></select>
+                </div>
+                <button type="submit" class="btn btn-info">
+                    Search
+                    <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" style="width:20px; height:20px;" />
+                </button>
+            </form>
+            <br />
+        </div>
+        @if (Model.CurrentUserRole == EnumRoles.Administrator)
+        {
+            <div class="col-md-4">
+                <label style="font:bold">Download list of vynils</label>
+                <form asp-action="ExportAllVynils" asp-controller="Vynils" method="post">
+                    @Html.HiddenFor(m => m.Vynils)
+                    <div class="form-group">
+                        <label asp-for="Genre" class="control-label" style="width: 30%; height:30%"></label>
+                        <select class="form-control" asp-for="Genre" asp-items="Html.GetEnumSelectList<VynilShop.Domain.DomainModels.EnumGenre>()" style="width: 30%; height:30%">
+                            <option value=null>All</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-info">
+                        Download
+                        <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" style="width:20px; height:20px;" />
+                    </button>
+                </form>
+            </div>
+        }
+
+        <div class="m-3">
+            <a class="btn btn-info" asp-controller="Vynils" asp-action="Create">
+                <img src="https://cdn-icons-png.flaticon.com/512/32/32339.png" style="width:20px; height:20px;" />
+               Add new Vynil
+            </a>
+        </div>
+    </div>
+ 
+
+    @for (int i = 0; i < Model.Vynils.Count; i++)
+    {
+        var item = Model.Vynils[i];
+
+        if (i % 3 == 0)
+        {
+            @:<div class="row">
+            }
+
+
+            <div class="col-md-3 m-4">
+                <div class="card">
+                    <img class="card-img-top" src="@item.VynilImage" alt="Image for Vynil!" />
+
+                    <div class="card-body">
+                        <h4 class="card-title">@item.VynilName</h4>
+                        <p class="card-text">@item.VynilDescription</p>
+                        <p class="card-text">Date of release: @item.VynilDate.ToString("dd MMM yyyy")</p>
+                        <p class="card-text">Genre: @item.Genre</p>
+                        <p class="card-text">Rating: @item.VynilRating</p>
+                        <p class="card-text">Price: @item.VynilPrice MKD </p>
+                    </div>
+
+                    <div class="card-footer">
+
+                        <a asp-controller="Vynils" asp-action="AddVynilToCard" asp-route-id="@item.Id" class="btn btn-info">
+                            <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" style="width:20px; height:20px;" />
+
+                        </a>
+                        <a asp-controller="Vynils" asp-action="Details" asp-route-id="@item.Id" class="btn btn-success">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1150/1150592.png" style="width:20px; height:20px;" />
+
+                        </a>
+                        @if (Model.CurrentUserRole == EnumRoles.Administrator)
+                        {
+                            <a asp-controller="Vynils" asp-action="Edit" asp-route-p="@item.Id" class="btn btn-secondary">
+                                <img src="https://cdn-icons-png.flaticon.com/512/266/266146.png" style="width:20px; height:20px;" />
+                            </a>
+
+                            <a asp-controller="Vynils" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
+                                <img src="https://cdn-icons-png.flaticon.com/512/484/484662.png" style="width:20px; height:20px;" />
+
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div> if (i % 3 == 2)
+            {
+            @:</div>
+        }
+    }
+
+</div>

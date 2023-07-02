@@ -1,0 +1,41 @@
+﻿@model IEnumerable<VynilShop.Domain.DomainModels.Artist>
+
+@{
+    ViewData["Title"] = "Artist";
+}
+<p>
+    <a asp-action="Create">
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32339.png" style="width:20px; height:20px;" />
+       Add artist
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id"><img src="https://cdn-icons-png.flaticon.com/512/266/266146.png" style="width:20px; height:20px;" /></a> |
+                <a asp-action="Details" asp-route-id="@item.Id"><img src="https://cdn-icons-png.flaticon.com/128/1150/1150592.png" style="width:20px; height:20px;" /></a> |
+                <a asp-action="Delete" asp-route-id="@item.Id"><img src="https://cdn-icons-png.flaticon.com/512/484/484662.png" style="width:20px; height:20px;" /></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

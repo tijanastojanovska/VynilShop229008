@@ -1,0 +1,62 @@
+﻿@model VynilShop.Domain.DomainModels.Vynil
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Vynil</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VynilName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VynilName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VynilImage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VynilImage)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VynilDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VynilDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VynilDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VynilDate)
+        </dd>
+        
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VynilPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VynilPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VynilRating)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VynilRating)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
